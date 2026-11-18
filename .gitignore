@@ -1,0 +1,73 @@
+# Environment variables
+.env
+backend/.env
+ml/.env
+frontend/.env
+
+# Keep the .env.example template
+!.env.example
+
+# Java/Spring Boot (Backend)
+backend/target/
+backend/*.log
+# backend/.mvn/  # Commented out to allow tracking
+# backend/mvnw   # Commented out to allow tracking
+# backend/mvnw.cmd  # Commented out to allow tracking
+# backend/.mvn/wrapper/maven-wrapper.jar  # Commented out to allow tracking
+
+# Python/FastAPI (ML Microservice)
+ml/__pycache__/
+ml/*.pyc
+ml/*.pyo
+ml/*.pyd
+ml/.pytest_cache/
+ml/venv/
+ml/.env
+ml/*.log
+
+# React (Frontend)
+frontend/node_modules/
+frontend/build/
+frontend/.env.local
+frontend/.env.development.local
+frontend/.env.test.local
+frontend/.env.production.local
+frontend/*.log
+
+# Docker
+*.dockerignore
+docker-compose.override.yml
+*.tar.gz
+*.docker
+
+# MongoDB local data (for docker-compose)
+mongo-data/
+
+# IDE and Editor Files
+.idea/
+*.iml
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# Miscellaneous
+*.bak
+*.swp
+*~
+*.log
+
+# Python virtual environments
+**/.venv/
+
+# Python cache files
+**/__pycache__/
+**/*.pyc
+
+# ML training artifacts and debug files
+ml/checkpoints/
+ml/lightning_logs/
+ml/debug_lstm.py
